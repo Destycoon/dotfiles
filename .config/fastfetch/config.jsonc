@@ -1,34 +1,77 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "height": 12,
+    "width": 25,
+    "padding": {
+      "top": 2,
+      "left": 2
+    }
+  },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter",
-    "locale",
     "break",
-    "colors"
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────── Hardware ──────┐"
+    },
+    {
+      "type": "host",
+      "key": " PC",
+      "keyColor": "green"
+    },
+    {
+      "type": "cpu",
+      "key": "├ CPU",
+      "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "└ RAM",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└─────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌────── Software ──────┐"
+    },
+    {
+      "type": "os",
+      "key": " OS",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "packages",
+      "key": "└ Pkgs",
+      "keyColor": "yellow"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─── Uptime / Date ───┐"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "datetime",
+      "key": "Date",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m└─────────────────────┘"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    }
   ]
 }

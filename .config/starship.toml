@@ -1,5 +1,2 @@
 # ~/.config/starship.toml
 
-format = '''
-[->](bold red) $all
-'''
