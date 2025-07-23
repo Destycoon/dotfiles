@@ -10,4 +10,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+clear
+
 eval "$(starship init zsh)"
+
+fastfetch
