@@ -1,73 +1,72 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "small",
-    "height": 12,
-    "width": 25,
+    "source": "~/dotfiles/ascii/ascii.txt",
+    "type": "file",
     "padding": {
-      "top": 2,
+      "top": 1,
       "left": 2
     }
   },
   "modules": [
-    "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌────── Hardware ──────┐"
-    },
-    {
-      "type": "host",
-      "key": " PC",
-      "keyColor": "green"
+      "format": "┌──────────── SYSTEM ────────────┐"
     },
     {
       "type": "cpu",
-      "key": "├ CPU",
+      "key": "│  CPU    :",
       "keyColor": "green"
     },
     {
       "type": "memory",
-      "key": "└ RAM",
+      "key": "│  RAM    :",
       "keyColor": "green"
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└─────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌────── Software ──────┐"
+      "format": "├────────────󰨇 SOFTWARE ───────────┤"
     },
     {
       "type": "os",
-      "key": " OS",
+      "key": "│  OS     :",
       "keyColor": "yellow"
     },
     {
-      "type": "packages",
-      "key": "└ Pkgs",
+      "type": "kernel",
+      "key": "│  Kernel :",
       "keyColor": "yellow"
     },
-    "break",
+    {
+      "type": "wm",
+      "key": "│  WM     :",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "shell",
+      "key": "│  Shell  :",
+      "keyColor": "yellow"
+    },
     {
       "type": "custom",
-      "format": "\u001b[90m┌─── Uptime / Date ───┐"
+      "format": "├────────────󰄉 SESSION ────────────┤"
     },
     {
       "type": "uptime",
-      "key": "Uptime",
+      "key": "│  Uptime :",
       "keyColor": "magenta"
     },
     {
       "type": "datetime",
-      "key": "Date",
+      "key": "│  Date   :",
       "keyColor": "magenta"
+      
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└─────────────────────┘"
+      "format": "└─────────────────────────────────┘"
     },
+    "break",
     {
       "type": "colors",
       "paddingLeft": 2,

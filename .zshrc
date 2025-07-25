@@ -15,3 +15,12 @@ clear
 eval "$(starship init zsh)"
 
 fastfetch
+
+#alias
+
+alias la='ls -la'
+
+alias pacman='sudo pacman'
+alias maj='pacman -Syu'
+
+alias reload='source ~/.zshrc'
