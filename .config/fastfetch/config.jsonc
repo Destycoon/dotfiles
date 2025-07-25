@@ -10,6 +10,14 @@
   },
   "modules": [
     {
+    "type": "custom",
+    "format": " "
+    },
+    {
+    "type": "custom",
+    "format": " "
+    },
+    {
       "type": "custom",
       "format": "┌──────────── SYSTEM ────────────┐"
     },
@@ -65,12 +73,6 @@
     {
       "type": "custom",
       "format": "└─────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "colors",
-      "paddingLeft": 2,
-      "symbol": "circle"
     }
   ]
 }
